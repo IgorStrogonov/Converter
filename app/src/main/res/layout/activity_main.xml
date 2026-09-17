@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#f5f5f5">
+
+    <!-- Заголовок -->
+
+    <!-- Кнопка авторизации -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Конвертер валют"
+        android:textColor="#333"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти в аккаунт"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#fff"
+        android:layout_marginBottom="4dp"
+        android:drawableStart="@android:drawable/ic_lock_lock"
+        android:drawablePadding="8dp" />
+
+    <!-- Кнопка конвертера -->
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Курсы валют"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#fff"
+        android:layout_marginBottom="4dp"
+        android:drawableStart="@android:drawable/ic_menu_my_calendar"
+        android:drawablePadding="8dp" />
+
+    <!-- Кнопка доната -->
+    <Button
+        android:id="@+id/btnDonate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Поддержать разработчика"
+        android:textSize="18sp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#fff"
+        android:layout_marginBottom="4dp"
+        android:drawableStart="@android:drawable/btn_star_big_on"
+        android:drawablePadding="8dp" />
+
+    <!-- После кнопки конвертера -->
+    <Button
+        android:id="@+id/btnRatesHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="История курсов"
+        android:textSize="18sp"
+        android:backgroundTint="#9C27B0"
+        android:textColor="#fff"
+        android:layout_marginBottom="4dp"
+        android:drawableStart="@android:drawable/ic_menu_sort_by_size"
+        android:drawablePadding="8dp" />
+
+    <!-- Информация о пользователе (будет видна после авторизации) -->
+    <TextView
+        android:id="@+id/tvUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#666"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+</LinearLayout>

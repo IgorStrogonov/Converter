@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Поддержать разработчика"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#333"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Иконка доната -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/btn_star"
+            android:layout_marginBottom="8dp"
+            android:tint="#FF9800" />
+
+        <!-- Описание -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Если вам нравится это приложение, вы можете поддержать его разработку любым удобным способом. Каждое пожертвование помогает улучшать приложение!"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#666"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Быстрые суммы доната -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Быстрый донат:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Кнопка доната 100 рублей -->
+        <Button
+            android:id="@+id/btnDonate100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100 рублей"
+            android:textSize="16sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#fff"
+            android:layout_marginBottom="4dp"
+            android:drawableStart="@android:drawable/ic_menu_upload"
+            android:drawablePadding="1dp" />
+
+        <!-- Кнопка доната 500 рублей -->
+        <Button
+            android:id="@+id/btnDonate500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="500 рублей"
+            android:textSize="16sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#fff"
+            android:layout_marginBottom="4dp"
+            android:drawableStart="@android:drawable/ic_menu_upload"
+            android:drawablePadding="1dp" />
+
+        <!-- Кнопка доната 1000 рублей -->
+        <Button
+            android:id="@+id/btnDonate1000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1000 рублей"
+            android:textSize="16sp"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#fff"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@android:drawable/ic_menu_upload"
+            android:drawablePadding="1dp" />
+
+        <!-- Кнопка произвольной суммы -->
+
+        <!-- Альтернативные способы -->
+        <Button
+            android:id="@+id/btnCustomDonate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF9800"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:drawablePadding="1dp"
+            android:text="Другая сумма"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Другие способы поддержки:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Рейтинг в магазине -->
+        <Button
+            android:id="@+id/btnRateApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Оценить приложение"
+            android:textSize="14sp"
+            android:backgroundTint="#607D8B"
+            android:textColor="#fff"
+            android:layout_marginBottom="4dp"
+            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:drawablePadding="1dp" />
+
+        <!-- Поделиться приложением -->
+        <Button
+            android:id="@+id/btnShareApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Поделиться с друзьями"
+            android:textSize="14sp"
+            android:backgroundTint="#795548"
+            android:textColor="#fff"
+            android:layout_marginBottom="4dp"
+            android:drawableStart="@android:drawable/ic_menu_share"
+            android:drawablePadding="1dp" />
+
+        <!-- Кнопка назад -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:textSize="16sp"
+            android:backgroundTint="#757575"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</ScrollView>

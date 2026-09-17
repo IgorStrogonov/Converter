@@ -1,0 +1,19 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Firebase-конфиг конкретного проекта - не секрет сам по себе, но незачем светить
+# project_id/api_key в публичном репозитории. Каждый разработчик берёт свой из консоли Firebase.
+app/google-services.json

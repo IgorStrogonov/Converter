@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Конвертер валют"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:textColor="#333" />
+
+        <!-- Ввод суммы -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сумма в рублях (RUB):"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp"
+            android:textColor="#666" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите сумму"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Кнопки валют -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите валюту:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#666" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnEUR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EUR"
+                android:textSize="14sp"
+                android:backgroundTint="#FF9800"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnUSD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="USD"
+                android:textSize="14sp"
+                android:backgroundTint="#2196F3"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnCNY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CNY"
+                android:textSize="14sp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnBYN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BYN"
+                android:textSize="14sp"
+                android:backgroundTint="#9C27B0"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <!-- Результат -->
+        <TextView
+            android:id="@+id/tvCurrencyResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите валюту для просмотра курса"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/results_background"
+            android:textColor="#333"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Детальная информация -->
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:background="@drawable/details_background"
+            android:padding="8dp"
+            android:textColor="#666" />
+
+        <!-- Счетчик истории -->
+        <TextView
+            android:id="@+id/tvHistoryCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Всего конвертаций: 0"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#666"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Кнопка обновления -->
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обновить курсы"
+            android:textSize="14sp"
+            android:backgroundTint="#607D8B"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp" />
+
+        <!-- Кнопка назад -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Прогресс бар -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <!-- Сообщение об ошибке -->
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#f44336"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
